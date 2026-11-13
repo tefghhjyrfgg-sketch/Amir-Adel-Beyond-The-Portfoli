@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#07090e">
+  <title>أمير عادل عيد | Amir Adel Eid - مهندس ذكاء اصطناعي وميديا باير</title>
+  <meta name="description" content="البورتفوليو الرسمي لـ أمير عادل عيد - مهندس ذكاء اصطناعي، ميديا باير ومصمم إعلانات إبداعية. اعرض أعمالي ومشاريعي الآن.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #0088ff;
+      --primary-glow: rgba(0, 136, 255, 0.45);
+      --accent-cyan: #00f2fe;
+      --bg-dark: #07090e;
+      --card-bg: rgba(14, 20, 32, 0.85);
+      --card-border: rgba(0, 136, 255, 0.25);
+      --text-main: #f0f4fc;
+      --text-muted: #94a3b8;
+      --whatsapp: #25d366;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(0, 136, 255, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 90% 65%, rgba(0, 242, 254, 0.1) 0%, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07090e;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e3a5f;
+      border-radius: 4px;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Fixed Header Nav */
+    .top-nav {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      width: calc(100% - 24px);
+      max-width: 650px;
+      background: rgba(10, 16, 28, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 8px 16px;
+      border-radius: 50px;
+      border: 1px solid rgba(0, 136, 255, 0.35);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 136, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .top-nav-logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .top-nav-logo span {
+      color: var(--accent-cyan);
+    }
+
+    .top-social-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.25s ease;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      flex-shrink: 0;
+    }
+
+    .social-btn:active, .social-btn:hover {
+      transform: scale(1.1);
+    }
+    .social-btn.fb { background: #1877f2; }
+    .social-btn.ig { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+    .social-btn.yt { background: #ff0000; }
+    .social-btn.tt { background: #000; border-color: #fe2c55; }
+    .social-btn.wa { background: #25d366; }
+
+    /* Profile Hero Header */
+    .profile-hero {
+      margin-top: 72px;
+      position: relative;
+    }
+
+    .cover-container {
+      width: 100%;
+      height: 280px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid var(--card-border);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+      background: #0e1524;
+    }
+
+    .cover-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.95);
+      display: block;
+    }
+
+    .cover-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(7, 9, 14, 0.1) 0%, rgba(7, 9, 14, 0.85) 100%);
+    }
+
+    /* Profile Avatar & Info Card */
+    .profile-info-wrapper {
+      position: relative;
+      margin-top: -85px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 20px;
+      z-index: 5;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--primary), #002244);
+      box-shadow: 0 8px 30px rgba(0, 136, 255, 0.5), 0 0 20px rgba(0, 242, 254, 0.3);
+    }
+
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #07090e;
+      background-color: #07090e;
+      display: block;
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      background: var(--primary);
+      color: #fff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      border: 3px solid #07090e;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .profile-title-area {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .profile-name {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(120deg, #ffffff 40%, var(--accent-cyan) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.25;
+    }
+
+    .profile-name-en {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .profile-tagline {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag-badge {
+      background: rgba(0, 136, 255, 0.12);
+      border: 1px solid rgba(0, 136, 255, 0.35);
+      padding: 5px 14px;
+      border-radius: 20px;
+      color: #7dd3fc;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Fast Action CTA Buttons */
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      text-align: center;
+      flex: 1 1 140px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), #0056ad);
+      color: #fff;
+      box-shadow: 0 6px 20px var(--primary-glow);
+      border: none;
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+      border: none;
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      color: #e2e8f0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Highlights Row */
+    .highlights-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 25px 0;
+    }
+
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 18px 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .highlight-icon {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      display: inline-block;
+      color: var(--accent-cyan);
+    }
+
+    .highlight-card h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+
+    .highlight-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 30px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .section-subtitle {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--accent-cyan);
+      letter-spacing: 2px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--primary));
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 550px;
+      margin: 8px auto 0;
+      padding: 0 10px;
+    }
+
+    /* Filter Tabs Scrollable on Mobile */
+    .filter-tabs-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .filter-tabs-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      width: max-content;
+      margin: 0 auto;
+      padding: 0 8px;
+    }
+
+    .tab-btn {
+      background: rgba(14, 20, 32, 0.85);
+      border: 1px solid rgba(0, 136, 255, 0.25);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(0, 136, 255, 0.35), rgba(0, 242, 254, 0.2));
+      border-color: var(--primary);
+      color: #fff;
+      box-shadow: 0 3px 12px rgba(0, 136, 255, 0.3);
+    }
+
+    /* Video Portfolio Cards Grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .project-card:hover {
+      border-color: rgba(0, 136, 255, 0.6);
+      transform: translateY(-4px);
+    }
+
+    .card-media {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: #090e18;
+      overflow: hidden;
+    }
+
+    .card-media-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.75);
+      display: block;
+    }
+
+    .card-category-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(7, 9, 14, 0.9);
+      border: 1px solid var(--card-border);
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      z-index: 2;
+    }
+
+    .card-play-btn {
+      position: absolute;
+      inset: 0;
+      margin: auto;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: rgba(0, 136, 255, 0.9);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      box-shadow: 0 0 20px rgba(0, 136, 255, 0.8);
+      z-index: 2;
+      text-decoration: none;
+      padding-left: 2px;
+    }
+
+    .card-body {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+      margin-bottom: 15px;
+      flex-grow: 1;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+
+    .card-tag {
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3px 10px;
+      border-radius: 10px;
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .btn-watch {
+      width: 100%;
+      text-align: center;
+      padding: 11px;
+      border-radius: 12px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(0, 136, 255, 0.25), rgba(0, 242, 254, 0.2));
+      border: 1px solid var(--primary);
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    .btn-watch:active, .btn-watch:hover {
+      background: var(--primary);
+    }
+
+    /* Social Channels Showcase */
+    .channels-section {
+      background: rgba(14, 20, 32, 0.7);
+      border-radius: 24px;
+      padding: 30px 18px;
+      margin: 25px 0;
+      border: 1px solid var(--card-border);
+    }
+
+    .channels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+
+    .channel-box {
+      background: rgba(10, 16, 28, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease;
+    }
+
+    .channel-box:active {
+      transform: scale(0.97);
+    }
+
+    .channel-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .channel-box.fb .channel-icon { background: #1877f2; }
+    .channel-box.ig .channel-icon { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); }
+    .channel-box.yt .channel-icon { background: #ff0000; }
+    .channel-box.tt .channel-icon { background: #000; border: 1px solid #fe2c55; }
+
+    .channel-info h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .channel-info span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* About Section */
+    .about-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 26px 20px;
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .about-text p {
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+
+    .skills-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-badge {
+      background: rgba(0, 136, 255, 0.12);
+      border: 1px solid rgba(0, 136, 255, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-box-inner {
+      background: rgba(10, 16, 28, 0.9);
+      border: 1px solid rgba(0, 136, 255, 0.3);
+      border-radius: 20px;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .contact-box-inner h4 {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .contact-phone-number {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent-cyan);
+      direction: ltr;
+      display: block;
+      margin: 12px 0 16px;
+      letter-spacing: 1px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 30px 16px;
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--whatsapp);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      text-decoration: none;
+      transition: transform 0.25s ease;
+    }
+
+    .floating-whatsapp:active {
+      transform: scale(0.9);
+    }
+
+    /* Mobile First Adjustments */
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      .cover-container {
+        height: 180px;
+        border-radius: 16px;
+      }
+      .avatar-wrapper {
+        width: 130px;
+        height: 130px;
+      }
+      .profile-info-wrapper {
+        margin-top: -65px;
+      }
+      .profile-name {
+        font-size: 1.65rem;
+      }
+      .profile-name-en {
+        font-size: 0.88rem;
+      }
+      .top-nav {
+        top: 8px;
+        padding: 6px 12px;
+      }
+      .top-nav-logo span.hide-mobile {
+        display: none;
+      }
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions .btn {
+        flex: 1 1 100%;
+      }
+      .floating-whatsapp {
+        bottom: 16px;
+        left: 16px;
+        width: 48px;
+        height: 48px;
+        font-size: 1.45rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .top-social-links .social-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+      }
+      .avatar-wrapper {
+        width: 115px;
+        height: 115px;
+      }
+      .profile-name {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Navigation / Social Hub -->
+  <nav class="top-nav">
+    <div class="top-nav-logo">
+      <i class="fa-solid fa-brain" style="color: var(--accent-cyan);"></i>
+      <span>AMIR</span> EID
+    </div>
+    <div class="top-social-links">
+      <a href="https://www.facebook.com/share/1Cbg7uwdbu/" target="_blank" rel="noopener noreferrer" class="social-btn fb" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/amir_adel_eid?mdxt=dWM1cDFqN3FiMmFq" target="_blank" rel="noopener noreferrer" class="social-btn ig" title="انستجرام"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/@amir_adel_eid?si=qFx3Uu3e9KtDsvV9" target="_blank" rel="noopener noreferrer" class="social-btn yt" title="يوتيوب"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@amir_adel_eid?_r=1&_t=ZS-9BNV1ciibPI" target="_blank" rel="noopener noreferrer" class="social-btn tt" title="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://wa.me/201098021457" target="_blank" rel="noopener noreferrer" class="social-btn wa" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </nav>
+
+  <!-- Profile & Cover Hero Header -->
+  <header class="container profile-hero">
+    <!-- Cover Picture -->
+    <div class="cover-container">
+      <img src="cover.jpg" alt="غلاف الملف الشخصي - أمير عادل عيد">
+      <div class="cover-overlay"></div>
+    </div>
+
+    <!-- Profile Avatar & Details -->
+    <div class="profile-info-wrapper">
+      <div class="avatar-wrapper">
+        <img src="profile.jpg" alt="أمير عادل عيد - Amir Adel Eid">
+        <span class="verified-badge" title="حساب موثق"><i class="fa-solid fa-check"></i></span>
+      </div>
+
+      <div class="profile-title-area">
+        <h1 class="profile-name">أمير عادل عيد</h1>
+        <div class="profile-name-en">AMIR ADEL EID</div>
+        <div class="profile-tagline">
+          <span class="tag-badge"><i class="fa-solid fa-robot"></i> مهندس ذكاء اصطناعي</span>
+          <span class="tag-badge"><i class="fa-solid fa-bullhorn"></i> ميديا باير</span>
+          <span class="tag-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Creative Technologist</span>
+        </div>
+      </div>
+
+      <!-- Hero Actions -->
+      <div class="hero-actions">
+        <a href="https://wa.me/201098021457" target="_blank" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+        <a href="tel:01098021457" class="btn btn-primary">
+          <i class="fa-solid fa-phone"></i> 01098021457
+        </a>
+        <a href="#work" class="btn btn-outline">
+          <i class="fa-solid fa-play"></i> سابقة الأعمال
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Key Pillars / Highlights -->
+  <div class="container">
+    <div class="highlights-row">
+      <div class="highlight-card">
+        <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+        <h4>حلول الذكاء الاصطناعي</h4>
+        <p>AI Workflows لبناء حملات فائقة الاستهداف والدقة</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon"><i class="fa-solid fa-video"></i></div>
+        <h4>فيديوهات وإعلانات تجارية</h4>
+        <p>مونتاج وسيناريوهات إبداعية ترفع معدل التحويل والمبيعات</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h4>ميديا باينج متقدم</h4>
+        <p>إدارة الحملات الممولة بأعلى عائد استثماري (ROAS)</p>
+      </div>
+
+      <div class="highlight-card">
+        <div class="highlight-icon"><i class="fa-solid fa-film"></i></div>
+        <h4>أفلام هادفة ورسائل بصرية</h4>
+        <p>سرد قصصي وتصميم أفلام توعوية مؤثرة تصنع صدى واسع</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Works Section -->
+  <main class="container section" id="work">
+    <div class="section-header">
+      <span class="section-subtitle">PORTFOLIO & SHOWCASE</span>
+      <h2 class="section-title">معرض الأعمال والفيديوهات</h2>
+      <p class="section-desc">مجموعة مختارة من أقوى الحملات الإعلانية ومقاطع الفيديو المنفذة باحترافية.</p>
+    </div>
+
+    <!-- Filter Tabs with Mobile Horizontal Swipe -->
+    <div class="filter-tabs-wrapper">
+      <div class="filter-tabs">
+        <button class="tab-btn active" onclick="filterProjects(event, 'all')"><i class="fa-solid fa-layer-group"></i> كل الأعمال</button>
+        <button class="tab-btn" onclick="filterProjects(event, 'cars')"><i class="fa-solid fa-car"></i> تجارة وسيارات</button>
+        <button class="tab-btn" onclick="filterProjects(event, 'beauty')"><i class="fa-solid fa-spray-can-sparkles"></i> منتجات وتجميل</button>
+        <button class="tab-btn" onclick="filterProjects(event, 'films')"><i class="fa-solid fa-film"></i> أفلام وتوعية</button>
+      </div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="portfolio-grid">
+
+      <!-- Item 1: Auto Adam -->
+      <article class="project-card" data-category="cars">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-car-side"></i> فيديو تجاري</div>
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80" alt="AUTO ADAM" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/r/1CFj23JyUK/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">فيديو إعلاني احترافي | AUTO ADAM لتجارة السيارات</h3>
+          <p class="card-desc">فيديو إعلاني ديناميكي وسريع لجذب المهتمين بشراء وتجارة السيارات الفاخرة.</p>
+          <div class="card-tags">
+            <span class="card-tag">تجارة سيارات</span>
+            <span class="card-tag">إعلان ريلز</span>
+            <span class="card-tag">مونتاج سينمائي</span>
+          </div>
+          <a href="https://www.facebook.com/share/r/1CFj23JyUK/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد الفيديو الآن
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 2: Al Motamayez Car Wash -->
+      <article class="project-card" data-category="cars">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-shower"></i> خدمات سيارات</div>
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=700&q=80" alt="مغسلة المتميز" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/r/1A47KWgG6j/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">إعلان مغسلة عربيات | مغسلة المتميز (Part 1)</h3>
+          <p class="card-desc">إعلان جذاب يبرز خدمات العناية الفائقة وغسيل وتلميع السيارات بأحدث المعدات.</p>
+          <div class="card-tags">
+            <span class="card-tag">خدمات سيارات</span>
+            <span class="card-tag">فيديو دعائي</span>
+            <span class="card-tag">سوشيال ميديا</span>
+          </div>
+          <a href="https://www.facebook.com/share/r/1A47KWgG6j/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد الفيديو الأول
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 3: Al Motamayez Car Wash Part 2 -->
+      <article class="project-card" data-category="cars">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-sparkles"></i> خدمات سيارات</div>
+          <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=700&q=80" alt="مغسلة المتميز جزء 2" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/r/1ZKNXF7iGU/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">إعلان مغسلة المتميز | العناية الشاملة (Part 2)</h3>
+          <p class="card-desc">استكمال الحملة الترويجية مع التركيز على دقة التفاصيل، التلميع الداخلي، وتحفيز العملاء.</p>
+          <div class="card-tags">
+            <span class="card-tag">Car Detailing</span>
+            <span class="card-tag">ميديا باينج</span>
+            <span class="card-tag">ريلز فيسبوك</span>
+          </div>
+          <a href="https://www.facebook.com/share/r/1ZKNXF7iGU/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد الفيديو الثاني
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 4: Aromazon Cream -->
+      <article class="project-card" data-category="beauty">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-gem"></i> منتجات وتجميل</div>
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=700&q=80" alt="AROMAZON" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/r/1JPh8H2mEe/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">إعلان تسويقي فاخر | كريم AROMAZON</h3>
+          <p class="card-desc">فيديو إعلاني عالي الجاذبية والبصريات لمنتج العناية، صُمم لتحويل المشاهدين لطلبات شراء.</p>
+          <div class="card-tags">
+            <span class="card-tag">مستحضرات تجميل</span>
+            <span class="card-tag">إعلان منتج</span>
+            <span class="card-tag">E-Commerce</span>
+          </div>
+          <a href="https://www.facebook.com/share/r/1JPh8H2mEe/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد الإعلان
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 5: Who Owns The Decision Film -->
+      <article class="project-card" data-category="films">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-clapperboard"></i> فيلم قصير</div>
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=700&q=80" alt="فيلم من يملك القرار" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/v/19o5hd9DLe/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">فيلم "من يملك القرار" | فكرة وإخراج وتصميم</h3>
+          <p class="card-desc">عمل سينمائي وفكري يناقش صراع اتخاذ القرارات المصيرية والتأثير النفسي في قالب درامي مشوق.</p>
+          <div class="card-tags">
+            <span class="card-tag">إنتاج فني</span>
+            <span class="card-tag">سيناريو وإخراج</span>
+            <span class="card-tag">تصميم بصري</span>
+          </div>
+          <a href="https://www.facebook.com/share/v/19o5hd9DLe/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد الفيلم كاملاً
+          </a>
+        </div>
+      </article>
+
+      <!-- Item 6: Fame & Trend Awareness Film -->
+      <article class="project-card" data-category="films">
+        <div class="card-media">
+          <div class="card-category-badge"><i class="fa-solid fa-bullhorn"></i> توعية ومجتمع</div>
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="فيلم توعوي عن الشهرة والترند" class="card-media-bg" loading="lazy">
+          <a href="https://www.facebook.com/share/v/1AGKn1cGam/" target="_blank" rel="noopener noreferrer" class="card-play-btn" title="مشاهدة على فيسبوك">
+            <i class="fa-solid fa-play"></i>
+          </a>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">فيلم توعوي هادف | حقيقة الشهرة وفخ الترند</h3>
+          <p class="card-desc">فيديو توعوي يسلط الضوء على هوس السوشيال ميديا وتأثير الترند على الشباب بمونتاج معبر.</p>
+          <div class="card-tags">
+            <span class="card-tag">فيديو توعوي</span>
+            <span class="card-tag">قضايا مجتمعية</span>
+            <span class="card-tag">سرد قصصي</span>
+          </div>
+          <a href="https://www.facebook.com/share/v/1AGKn1cGam/" target="_blank" rel="noopener noreferrer" class="btn-watch">
+            <i class="fa-brands fa-facebook"></i> شاهد العمل التوعوي
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Social Hub Showcase Section -->
+  <section class="container">
+    <div class="channels-section">
+      <div class="section-header" style="margin-bottom: 20px;">
+        <span class="section-subtitle">CONNECT WITH ME</span>
+        <h2 class="section-title">تابعني على منصات التواصل</h2>
+      </div>
+      <div class="channels-grid">
+        <a href="https://www.facebook.com/share/1Cbg7uwdbu/" target="_blank" rel="noopener noreferrer" class="channel-box fb">
+          <div class="channel-icon"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="channel-info">
+            <h4>Facebook</h4>
+            <span>صفحتي الرسمية والحملات</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/amir_adel_eid?mdxt=dWM1cDFqN3FiMmFq" target="_blank" rel="noopener noreferrer" class="channel-box ig">
+          <div class="channel-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="channel-info">
+            <h4>Instagram</h4>
+            <span>@amir_adel_eid</span>
+          </div>
+        </a>
+
+        <a href="https://youtube.com/@amir_adel_eid?si=qFx3Uu3e9KtDsvV9" target="_blank" rel="noopener noreferrer" class="channel-box yt">
+          <div class="channel-icon"><i class="fa-brands fa-youtube"></i></div>
+          <div class="channel-info">
+            <h4>YouTube</h4>
+            <span>قناتي الرسمية والأفلام</span>
+          </div>
+        </a>
+
+        <a href="https://www.tiktok.com/@amir_adel_eid?_r=1&_t=ZS-9BNV1ciibPI" target="_blank" rel="noopener noreferrer" class="channel-box tt">
+          <div class="channel-icon"><i class="fa-brands fa-tiktok"></i></div>
+          <div class="channel-info">
+            <h4>TikTok</h4>
+            <span>فيديوهات قصيرة وترندات</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Contact Section -->
+  <section class="container section">
+    <div class="about-card">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-subtitle">ABOUT ME</span>
+          <h3>أمير عادل عيد</h3>
+          <p>
+            مهندس ذكاء اصطناعي (AI Engineer) وميديا باير ومصمم بصري محترف، أدمج بين قوة أحدث خوارزميات الذكاء الاصطناعي واستراتيجيات التسويق الرقمي وصناعة الفيديوهات المبتكرة لتحقيق أقصى وصول وأعلى عائد للأنشطة التجارية.
+          </p>
+          <div class="skills-badges">
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Artificial Intelligence</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Media Buying</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Video Ads & Editing</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Creative Branding</span>
+          </div>
+        </div>
+
+        <div class="contact-box-inner">
+          <i class="fa-solid fa-headset" style="font-size: 2.2rem; color: var(--primary); margin-bottom: 8px; display: inline-block;"></i>
+          <h4>جاهز لبدء مشروعك القادم؟</h4>
+          <p style="color: var(--text-muted); font-size: 0.88rem;">تواصل معي مباشرة لمناقشة حملتك الإعلانية أو صناعة محتواك.</p>
+          
+          <div class="contact-phone-number">
+            01098021457
+          </div>
+
+          <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/201098021457" target="_blank" class="btn btn-whatsapp" style="padding: 10px 18px; font-size: 0.9rem;">
+              <i class="fa-brands fa-whatsapp"></i> واتساب فوري
+            </a>
+            <a href="tel:01098021457" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.9rem;">
+              <i class="fa-solid fa-phone"></i> اتصال هاتفي
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span> <strong>أمير عادل عيد | AMIR ADEL EID</strong></p>
+      <p style="font-size: 0.82rem; margin-top: 4px; color: #64748b;">Build Smarter. Create Better. With AI.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/201098021457" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" title="تواصل عبر واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- JS for Filtering -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    function filterProjects(event, category) {
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
